@@ -1,0 +1,81 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a:link, a:visited {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+a:link:hover, a:visited:hover{
+  background-color: #050505;
+  color: rgb(122, 118, 118);
+
+}
+/* a:hover, a:active {
+  background-color: #050505;
+  color: rgb(3, 3, 3);
+} */
+
+* {
+  box-sizing: border-box;
+}
+.mybutton {
+  background-color: #020302; /* Green background color */
+  border: 15px; /* Remove border */
+  color: white; /* White text */
+  padding: 10px 15px; /* Add some padding */
+  font-size: 16px; /* Increase font size */
+  cursor: pointer; /* Change cursor on hover */
+  border-radius: 5px; /* Add rounded corners */
+}
+.mybutton-activated{
+  background-color:rgb(209, 200, 200);
+  color: #020302;
+}
+
+
+/* Styles for the increment button */
+.increment {
+  margin-right: 10px; /* Add some spacing between buttons */
+}
+.increment:hover{
+  background-color: #087c0e; /* Green background color */
+
+}
+
+/* Styles for the decrement button */
+.decrement {
+  margin-left: 10px; /* Add some spacing between buttons */
+}
+.decrement:hover {
+  background-color: #7e0707; /* Add some spacing between buttons */
+}
+
+label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#counter {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  background-color: #eee;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+
+
+
