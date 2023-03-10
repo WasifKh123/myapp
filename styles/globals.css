@@ -1,81 +1,51 @@
-html,
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #fbfbfb;
 }
 
-a:link, a:visited {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-a:link:hover, a:visited:hover{
-  background-color: #050505;
-  color: rgb(122, 118, 118);
-
-}
-/* a:hover, a:active {
-  background-color: #050505;
-  color: rgb(3, 3, 3);
-} */
-
-* {
-  box-sizing: border-box;
-}
-.mybutton {
-  background-color: #020302; /* Green background color */
-  border: 15px; /* Remove border */
-  color: white; /* White text */
-  padding: 10px 15px; /* Add some padding */
-  font-size: 16px; /* Increase font size */
-  cursor: pointer; /* Change cursor on hover */
-  border-radius: 5px; /* Add rounded corners */
-}
-.mybutton-activated{
-  background-color:rgb(209, 200, 200);
-  color: #020302;
+@media (min-width: 992px) {
+  .sidebar {
+    height: unset!important;
+  }
 }
 
-
-/* Styles for the increment button */
-.increment {
-  margin-right: 10px; /* Add some spacing between buttons */
-}
-.increment:hover{
-  background-color: #087c0e; /* Green background color */
-
-}
-
-/* Styles for the decrement button */
-.decrement {
-  margin-left: 10px; /* Add some spacing between buttons */
-}
-.decrement:hover {
-  background-color: #7e0707; /* Add some spacing between buttons */
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 58px 0 0;
+  /* Height of navbar */
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+  width: 240px;
+  /* z-index: 600; */
 }
 
-label {
-  font-size: 18px;
-  font-weight: bold;
+.sidebar.show {
+  height: 100vh;
 }
 
-#counter {
-  display: inline-block;
-  width: 30px;
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-  background-color: #eee;
-  border: 2px solid #ccc;
+@media (max-width: 992px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+.sidebar .active {
   border-radius: 5px;
-  padding: 5px;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
 }
 
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: 0.5rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* Scrollable contents if viewport is shorter than content. */
+}
 
 
 
