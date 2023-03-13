@@ -1,9 +1,9 @@
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react'
-import Auth from './authuser'
+import Auth from '../pages/authuser';
 import dynamic from "next/dynamic";
 import Sidebar from '../components/sidebar';
-import Login from '../components/login';
+import Login from './login';
 
 const Authenticate=({children}) => {
     const {gettoken} = Auth();

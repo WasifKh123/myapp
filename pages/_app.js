@@ -4,7 +4,7 @@ import ColorState from './colorState';
 import ColorContext from './colorContext';
 import Header from './header';
 import Auth from './authuser';
-import Authenticate from './authenticate';
+import Authenticate from '../components/authenticate';
 function MyApp({ Component, pageProps }) {
   
   return(
